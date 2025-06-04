@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link href="images/favicon.ico" type="image/x-icon" rel="shortcut icon" />
+    <title>Thiên Lộ Truyền Kỳ</title>
+    <meta name="author" content="VTC" />
+    <meta name="description"
+        content="Long Chiến Truyền Kỳ VTC - Ngự Kim Long - Đoạt Vàng Ròng. Game nhập vai màn hình dọc chủ đề tiên kiếm hiệp chính thức ra mắt với chuỗi sự kiện tặng vàng thật chưa từng có trước đây. ">
+    <meta name="keywords"
+        content="long chien truyen ky vtc, game nhap vai, game mobile, dragon heroes, game man hinh doc, tien hiep, kiem hiep">
+    <meta property="og:site_name" content="Long Chiến Truyền Kỳ VTC" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="">
+    <meta property="og:title" content="Thiên Lộ Truyền Kỳ">
+    <meta property="og:description" content="" />
+    <meta property="og:image:type" content="images/jpeg" />
+    <meta property="og:image" content="images/banner-qc.jpg" />
+
+    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="js/swiper5.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+    <!--<script type="text/javascript" src="js/jquery.bpopup.js"></script>-->
+    <script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
+    <script type="text/javascript" src="js/clipboard.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/reset.css?v=1.4" />
+    <link rel="stylesheet" type="text/css" href="css/style.css?v=1.6" />
+    <link rel="stylesheet" href="css/mcgic.css">
+    <link rel="stylesheet" href="css/jquery.fullPage.css?v=1.4">
+    <!--<link rel="stylesheet" type="text/css" href="css/swiper.min.css?v=1.4" />-->
+    <link rel="stylesheet" type="text/css" href="css/animate.css?v=1.4" />
+
+    <link rel="stylesheet" href="css/fancybox.css">
+    <!--video--->
+
+    <link rel="stylesheet" href="css/swiper.min.css" />
+
+    <!-- menu right-->
+    <script type="text/javascript" src="js/fixedbox.js"></script>
+
+    <!--popup code-->
+    <link rel="stylesheet" href="css/vendor.css" />
+
+    <!-- anh sang bay -->
+    <script src="js/createjs-2015.11.26.min.js"></script>
+    <script src="js/f1_HTML5_20Canvas_2103.js"></script>
+    <script src="js/createCanvas_2103.js"></script>
+
+
+
+</head>
+
+<body onload="init();">
+
+    <div id="myfullpage">
+        <div id="Div1" style="position: fixed; top: 0px; left: 0px; z-index: 1000;">
+            <img src="https://media.scoin.vn/media/tapkich.vn/images/18plus.jpg">
+        </div>
+        <div class="section p1" id="section-one">
+            <!--<video autoplay="autoplay" loop="loop" muted="" poster="images/banner1.jpg" class="lazyload pic-web">
+			<source src="images/header.mp4" type="video/mp4">
+		</video>-->
+
+            <div class="yyly">
+
+                <div class="yy-an pic-web clearfloat">
+                    <div class="down-box clearfloat">
+                        <li>
+                            <img data-src="images/icon.png" alt="đạo sĩ xuất quan">
+                        </li>
+                        <li>
+                            <a id="download-btn" onclick="event.preventDefault(); downloadGame();" target="_blank">
+                                <img data-src="images/bt-taigame.png" alt="Tải game"></a>
+                            <a href="https://www.facebook.com/messages/t/687882294401956">
+                                <img data-src="images/bt-giftcode.png" alt="Giftcode"></a>
+                        </li>
+                        <li><a href="https://www.facebook.com/messages/t/687882294401956" target="_blank">
+                                <img data-src="images/bt-napthe.png" alt="Nạp thẻ"></a></li>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll pic-wap">
+                <img class="scroll-img" src="images/scroll.png" alt="Trượt xuống để xem">
+            </div>
+            <div id="animation_container" class="star">
+                <canvas id="canvas" width="1920" height="1080" class="img-responsive"></canvas>
+                <div id="dom_overlay_container" class="star-box"></div>
+            </div>
+
+        </div>
+        <div class="section p2" id="section-two">
+            <div class="sec2">
+                <div class="sec2-title wfb">
+                    <img data-src="./images/slogan2.png"
+                        alt="Ngự Kim Long - Tặng Kim Long Trong hình - sở hữu vĩnh viễn">
+                </div>
+                <div class="ky wfr">
+                    <div class="sec2-button wfi">
+                        <!-- <li><a href="https://zalo.me/3239828410846275708" target="_blank">
+                            <img data-src="images/bt-dkt.png" alt="Đăng ký trước 29/7"></a></li>
+                        <li><a href="https://zalo.me/3239828410846275708" target="_blank">
+                            <img data-src="images/bt-dkn.png" alt="Đăng ký nhận"></a></li> -->
+                    </div>
+                    <a href="" data-fancybox
+                        class="play animate__animated animate__tada animate__infinite animate__slow"></a>
+                    <div class="img1">
+                        <img class="pic-web" data-src="images/ky.png" alt="Phone"><img class="pic-wap"
+                            data-src="images/ky-m.png" alt="Phone">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section p3" id="section-three">
+            <div class="sec3">
+                <div class="sec3-title wfb">
+                    <img data-src="images/slogan3.png" alt="Đoạt Vàng Ròng - Không cần top vẫn tặng Vàng SJC 9999">
+                </div>
+                <div class="bt-group wfi">
+                    <ul>
+                        <li><a aria-readonly="" href="" target="_blank">
+                                <img src="images/event1.png" alt="Đạt Cấp 350"></a></li>
+                        <li><a href="" target="_blank">
+                                <img src="images/event2.png" alt="Quay số may mắn"></a></li>
+                        <li><a href="" target="_blank">
+                                <img src="images/event3.png" alt="Mua sớm thần long"></a></li>
+                        <li><a href="" target="_blank">
+                                <img src="images/event4.png" alt="Vip 10"></a></li>
+                        <li><a href="" target="_blank">
+                                <img src="images/event5.png" alt="Top 1 bang hội"></a></li>
+                        <li><a href="" target="_blank">
+                                <img src="images/event6.png" alt="Top 1 lực chiến"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="section p4" id="section-four">
+            <div class="sec4">
+                <div class="sec4-title wfb">
+                    <img data-src="images/slogan4.png" alt="Nhập vai anh Hùng - Tứ Hệ Xung Khắc">
+                </div>
+                <dl class="sec4-nav clearfloat wLeft">
+                    <dd class="on">
+                        <img data-src="images/name1.png" alt="Đan Phù">
+                    </dd>
+                    <dd>
+                        <img data-src="images/name2.png" alt="Kiếm Cang">
+                    </dd>
+                    <dd>
+                        <img data-src="images/name3.png" alt="Pháp Kỳ">
+                    </dd>
+                    <dd>
+                        <img data-src="images/name4.png" alt="Ngự Hồn">
+                    </dd>
+                </dl>
+                <dl class="sec4-per clearfloat">
+                    <dd>
+                        <div class="stau stau1 on">
+                            <div class="per wfr">
+                                <img data-src="images/langsuong.png" alt="Lăng Sương">
+                            </div>
+                            <div class="title wfi">
+                                <img data-src="images/title-langsuong.png" alt="Lăng Sương">
+                            </div>
+                            <div class="word wfi">
+                                <img class="pic-web" data-src="images/skill-langsuong.png" alt="Thông tin"><img
+                                    class="pic-wap" data-src="images/skill-langsuong-m.png" alt="Thông tin">
+                            </div>
+                        </div>
+
+                    </dd>
+                    <dd>
+                        <div class="stau stau1 on">
+                            <div class="per wfr">
+                                <img data-src="images/longngam.png" alt="Long Ngâm">
+                            </div>
+                            <div class="title wfi">
+                                <img data-src="images/title-longngam.png" alt="Long Ngâm">
+                            </div>
+                            <div class="word wfi">
+                                <img class="pic-web" data-src="images/skill-longngam.png" alt="Thông Tin"><img
+                                    class="pic-wap" data-src="images/skill-longngam-m.png" alt="Thông Tin">
+                            </div>
+                        </div>
+
+
+                    </dd>
+                    <dd>
+                        <div class="stau stau1 on">
+                            <div class="per wfr">
+                                <img data-src="images/nghely.png" alt="Nghệ Ly">
+                            </div>
+                            <div class="title wfi">
+                                <img data-src="images/title-nghely.png" alt="Nghệ Ly">
+                            </div>
+                            <div class="word wfi">
+                                <img class="pic-web" data-src="images/skill-nghely.png" alt="Thông tin"><img
+                                    class="pic-wap" data-src="images/skill-nghely-m.png" alt="Thông tin">
+                            </div>
+                        </div>
+
+
+                    </dd>
+                    <dd>
+                        <div class="stau stau1 on">
+                            <div class="per wfr">
+                                <img data-src="images/tangkiem.png" alt="Tàng Kiếm">
+                            </div>
+                            <div class="title wfi">
+                                <img data-src="images/title-tangkiem.png" alt="Tàng Kiếm">
+                            </div>
+                            <div class="word wfi">
+                                <img class="pic-web" data-src="images/skill-tangkiem.png" alt="Thông tin"><img
+                                    class="pic-wap" data-src="images/skill-tangkiem-m.png" alt="Thông tin">
+                            </div>
+                        </div>
+
+
+                    </dd>
+                </dl>
+            </div>
+
+        </div>
+
+        <div class="section p5" id="section-five">
+            <div class="sec5">
+                <div class="slide-frame5 wfi">
+                    <div class="feature">
+                        <div class="swiper-feature swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide pic-web">
+                                    <img src="images/1.png" alt="">
+                                </div>
+                                <div class="swiper-slide pic-wap">
+                                    <img src="images/1-m.png" alt="">
+                                </div>
+                                <div class="swiper-slide pic-web">
+                                    <img src="images/2.png" alt="">
+                                </div>
+                                <div class="swiper-slide pic-wap">
+                                    <img src="images/2-m.png" alt="">
+                                </div>
+                                <div class="swiper-slide pic-web">
+                                    <img src="images/3.png" alt="">
+                                </div>
+                                <div class="swiper-slide pic-wap">
+                                    <img src="images/3-m.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <div class="section p6" id="section-six">
+            <div class="sec6">
+                <div class="sec6-left wfb">
+                    <div>
+                        <img data-src="images/f6-img2.png" alt="background">
+                    </div>
+                    <div class="sec6-left-item">
+                        <ul>
+                            <li>
+                                <div class="item-ani m1-gift-top p-relative ">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <div class="item-effect-glass ieg2"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item-ani m1-gift-top2 p-relative ">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <div class="item-effect-glass ieg3"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item-ani m1-gift-top3 p-relative ">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <div class="item-effect-glass ieg4"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item-ani m1-gift-top4 p-relative ">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <div class="item-effect-glass ieg5"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="https://www.facebook.com/messages/t/687882294401956" class="sec6-left-button">
+                        <img data-src="images/bt-giftcode1.png" alt="Nhận giftcode"></a>
+                </div>
+                <div class="sec6-right wfi">
+                    <div>
+                        <img data-src="images/f6-img1.png" alt="background">
+                    </div>
+                    <a href="https://www.facebook.com/thienlotruyenky.vn" target="_blank" class="sec6-right-button">
+                        <img data-src="images/bt-vaogame.png" alt="Vào game ngay"></a>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <div style="position: absolute; bottom: 100px; right: 0">
+        <!-- Messenger Chat plugin Code -->
+        <div id="fb-root"></div>
+
+        <!-- Your Chat plugin code -->
+        <div id="fb-customer-chat" class="fb-customerchat">
+        </div>
+
+        <script>
+            var chatbox = document.getElementById('fb-customer-chat');
+            chatbox.setAttribute("page_id", "108474801763625");
+            chatbox.setAttribute("attribution", "biz_inbox");
+        </script>
+
+        <!-- Your SDK code -->
+        <script>
+            window.fbAsyncInit = function () {
+                FB.init({
+                    xfbml: true,
+                    version: 'v13.0'
+                });
+            };
+
+            (function (d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        </script>
+
+    </div>
+    <footer class="foot clearfloat">
+        <div class="foot-left"><a></a></div>
+        <div class="foot-right f-roboto-light">
+            <p>Copyright 2014 VTC Mobile. All rights reserved </p>
+            <p>Công ty cổ phần VTC Dịch vụ di động - Tầng 11, Tòa nhà VTC Online </p>
+            <p>Số 18 Tam Trinh, phường Minh Khai, quận Hai Bà Trưng, Hà Nội </p>
+            <p>Người chịu trách nhiệm quản lý nội dung: Ông Nguyễn Viết Quang Minh. </p>
+            <p>Giấy phép phê duyệt nội dung kịch bản trò chơi điện tử trên mạng số 99/QĐ-BTTTT </p>
+            <p>
+                <a href="https://longchientruyenky.vn/huong-dan-cai-dat-go-bo.html" target="_blank">Hướng dẫn cài
+                    đặt</a> |
+                <a href="https://longchientruyenky.vn/dieu-khoan-su-dung.html" target="_blank">Điều khoản</a>
+                <br>
+            </p>
+        </div>
+    </footer>
+    <div class="head clearfloat" id="header">
+        <div class="logo">
+            <img class="pic-wap" src="images/icon.png" alt="đạo sĩ xuất quan">
+        </div>
+        <div class="ic pic-wap">
+            <a href="https://www.facebook.com/thienlotruyenky" target="_blank">
+                <img src="images/ic-fb-m.png" alt="Facebook"></a>
+            <a href="" target="_blank">
+                <img src="images/ic-group-m.png" alt="Group"></a>
+            <a href="https://zalo.me/g/kszsnv623" target="_blank">
+                <img src="images/ic-zalo-m.png" alt="Zalo"></a>
+            <a href="" target="_blank">
+                <img src="images/ic-titkok-m.png" alt="Tiktok"></a>
+        </div>
+        <div class="hanbager">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div id="menu" class="head-right f-roboto-medium">
+            <li><a></a><span>
+                    <img src="images/nav-1.png" alt="Trang Đầu"></span></li>
+            <li><a></a><span>
+                    <img src="images/nav-2.png" alt="Môn phái"></span></li>
+            <li><a></a><span>
+                    <img src="images/nav-3.png" alt="Tính Năng"></span></li>
+            <li><a></a><span>
+                    <img src="images/nav-4.png" alt="Đua Top"></span></li>
+            <li><a></a><span>
+                    <img src="images/nav-5.png" alt="Phúc Lợi"></span></li>
+            <li><a></a><span>
+                    <img src="images/nav-6.png" alt="Nhận Code"></span></li>
+
+            <div class="foot-btn">
+                <img src="images/bq.png" alt="Footer">
+            </div>
+        </div>
+
+    </div>
+    <div class="ic pic-web">
+        <a href="https://www.facebook.com/thienlotruyenky.vn" target="_blank">
+            <img src="images/ic-fb-m.png" alt="Facebook"></a>
+        <a href="" target="_blank">
+            <img src="images/ic-group-m.png" alt="Group"></a>
+        <a href="https://zalo.me/g/kszsnv623" target="_blank">
+            <img src="images/ic-zalo-m.png" alt="Zalo"></a>
+        <a href="" target="_blank">
+            <img src="images/ic-titkok-m.png" alt="Tiktok"></a>
+    </div>
+    <div class="foot-btn">
+        <img src="images/bq.png" alt="Footer">
+    </div>
+    <div class="nav-bot">
+        <a href="https://www.facebook.com/thienlotruyenky.vn" target="_blank">
+            <img src="images/bt-napthe-m.png" alt="Nạp thẻ"></a>
+        <a id="download-btn" onclick="event.preventDefault(); downloadGame();" target="_blank">
+            <img src="images/bt-taigame-m.png" alt="Tải game"></a>
+        <a href="https://www.facebook.com/messages/t/687882294401956" class="fc-fb mobile-fb">
+            <img src="images/bt-giftcode-m.png" alt="Giftcode"></a>
+    </div>
+    <!-- Fixed box -->
+    <div class="nav_right open">
+        <p class="text_center qr_code">
+            <span>
+                <img src="images/qrcode.jpg" width="120" height="120" class="qrcode" alt=""><i></i></span>
+        </p>
+        <ul class="buttai">
+            <li class="app-info__install--pc button-appstore"><a class="" target="_blank"
+                    href="http://www.poopogame.com/shortLink/dwios/token/eyJ1cmwiOiJodHRwczpcL1wveW5hcGsuZ2FtZXNzZGsuY29tXC9nYW1lXC80MTdcLzIwMjUwNlwvWU5fMS41X09mZmxpbmVpT1NfVlRMTVRfMjAyNTA2MDQxNDM4MzkuaXBhIiwiYnVuZGxlSWQiOiJjb20uZnp4eC5pb3Mudm4iLCJ2ZXJzaW9uIjoiMS41IiwiYXBwTmFtZSI6IngzZGdhbWUuYXBwIiwicGFja05hbWUiOiJWXHUxZWE1biBUaGlcdTAwZWFuIExcdTFlZDkifQ%3D%3D"
+                    title="Tải Appstore"></a></li>
+            <li class="app-info__install--pc button-googleplay"><a class="" target="_blank"
+                    href="https://ynapk.gamessdk.com/game/416/202505/YN_version_OfflineAndroid_VTLMT_20250530215530.apk"
+                    title="Tải Googleplay"></a></li>
+            <li class="app-info__install--pc button-apk"><a class="" target="_blank"
+                    href="https://ynapk.gamessdk.com/game/416/202505/YN_version_OfflineAndroid_VTLMT_20250530215530.apk"
+                    title="Tải APK"></a></li>
+        </ul>
+        <a href="https://www.facebook.com/messages/t/687882294401956" class="gift_code" title="Giftcode"></a>
+        <!--<a href="#frame1" title="top" class="top"> <img src="images/top.png" alt="top" /> </a>-->
+        <span class="i_control"></span>
+    </div>
+    <script type="text/javascript">
+        var template = {
+            menuLists: "Trang đầu|Kim Long|Vàng Ròng|Môn Phái|Tính Năng|Nhận Code",
+        };
+
+        if (template.awardName) {
+            template.awardName.split('|').forEach((item, index) => {
+                $('#reservation-process .min-rewardname').eq(index).text(item);
+            });
+        }
+        if (template.menuLists) {
+            template.menuLists.split('|').forEach((item, index) => {
+                $('#menu a').eq(index).text(item);
+            });
+        }
+
+        let achievementTitle = [];
+        if (template.achievementTitle) {
+            achievementTitle = JSON.parse(template.achievementTitle);
+        }
+    </script>
+    <!-- slide anh frame3-->
+    <script src="js/slide/swiper.min.js"></script>
+    <script src="js/slide/index.js"></script>
+
+    <script type="text/javascript" src="js/index.js?flag=dscgsubscribe?v=1.4"></script>
+    <script type="text/javascript" src="js/com.js"></script>
+
+    <!-- Popup nhan code -->
+    <div class="popup popup-detail" id="popup-giftcode" style="display: none;">
+        <div class="content-popup">
+            <div class="wrapper-popup">
+                <div class="title-detail text-center"></div>
+                <div class="content-new-detail">
+                    <div class="gift">
+                        <img src="images/item.png" class="img-responsive" alt="" />
+                    </div>
+                    <div class="regis-box f-roboto-light">
+                        <div class="input">
+                            <input type="text" name="txtExtInfo" id="txtExtInfo" placeholder="Nhập Email hoặc SĐT">
+                        </div>
+                    </div>
+                    <div class="regis-box">
+                        <a href="javascript:void(0)" class="bt-nhan1" id="btSend"></a>
+                    </div>
+                </div>
+                <a class="close-content"></a>
+            </div>
+        </div>
+    </div>
+    <!-- Popup sdt khong dung dinh dang -->
+    <div class="popup popup-detail" id="popup-sdtkd" style="display: none;">
+        <div class="content-popup">
+            <div class="wrapper-popup">
+                <div class="title-detail text-center"></div>
+                <div class="content-new-detail">
+                    <div class="gift">
+                        <img src="images/t1.png" class="img-responsive" style="width: 100%" alt="" />
+                    </div>
+                    <div class="regis-box">
+                        <a href="javascript:void(0)" class="bt-nhan1 retry"
+                            style="background: url('images/bt-try.png')  no-repeat; background-size: contain;"></a>
+                    </div>
+                </div>
+                <a class="close-content"></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Popup nhan code thanh cong -->
+    <div class="popup popup-detail" id="popup-nhancode" style="display: none;">
+        <div class="content-popup">
+            <div class="wrapper-popup">
+                <div class="title-detail text-center"></div>
+
+                <div class="content-new-detail">
+                    <div class="regis-box f-roboto-light">
+                        <div class="input">
+                            <input type="text" name="txtExtInfo" id="p-giftcode" placeholder="Mã code của bạn">
+                        </div>
+                    </div>
+                </div>
+                <a class="close-content"></a>
+            </div>
+        </div>
+    </div>
+    <!-- popup--->
+    <script type="text/javascript" src="js/bootstrap.min.js?v=1.2.6"></script>
+    <script type="text/javascript" src="js/vendor.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.close-content').click(function () {
+                $('.popup').fadeOut();
+            });
+            $('.retry').click(function () {
+                $('#popup-sdtkd').fadeOut();
+                $('#popup-nhapsdt').fadeIn();
+            });
+
+            $('.show-giftcode').click(function () {
+                $('#popup-giftcode').fadeIn();
+            });
+            // scroll 
+            jQuery(document).ready(function () {
+                jQuery('.content-new-detail1').scrollbar();
+
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $('#btSend').click(function () {
+            var _extInfo = $('#txtExtInfo').val();
+            if (!isMobileNumber(_extInfo) && !isEmail(_extInfo)) {
+                //$('#txtExtInfo').attr("placeholder", "Email hoặc Số điện thoại không đúng định dạng").val("").focus().blur();
+                $('#popup-sdtkd').fadeIn();
+            }
+            else {
+                $.ajax({
+                    type: 'POST',
+                    url: '//longchientruyenky.splay.vn/teaser/handlers/processrequest.ashx',
+                    dataType: 'json',
+                    data: { type: 'get', extInfo: _extInfo, t: Math.random() },
+                    async: true,
+                    error: function () {
+                    },
+                    success: function (result) {
+                        if (result.status == false) {
+                        }
+                        else {
+                            $('#p-giftcode').val("Mã code của bạn: " + result.data);
+                            $('#popup-nhancode').fadeIn();
+                        }
+                    }
+                });
+            }
+        });
+        function isMobileNumber(mobNum) {
+            if (mobNum.length == 10) {
+                {
+                    var mob = /^[0-9]*$/;
+                    if (mob.test(mobNum) == false) {
+                        return false;
+                    }
+                    return true;
+                }
+            }
+            else {
+                return false;
+            }
+        }
+        function isEmail(email) {
+            var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            return re.test(email);
+        }
+    </script>
+    <!--video-->
+    <script type="text/javascript" src="js/1.promotion.bundle.js"></script>
+    <script type="text/javascript" src="js/promotion.bundle.js"></script>
+
+    <script>
+        function getDownloadLink() {
+            var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+            if (/android/i.test(userAgent)) {
+                return "https://ynapk.gamessdk.com/game/416/202505/YN_version_OfflineAndroid_VTLMT_20250530215530.apk";
+            } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+                return "http://www.poopogame.com/shortLink/dwios/token/eyJ1cmwiOiJodHRwczpcL1wveW5hcGsuZ2FtZXNzZGsuY29tXC9nYW1lXC80MTdcLzIwMjUwNlwvWU5fMS41X09mZmxpbmVpT1NfVlRMTVRfMjAyNTA2MDQxNDM4MzkuaXBhIiwiYnVuZGxlSWQiOiJjb20uZnp4eC5pb3Mudm4iLCJ2ZXJzaW9uIjoiMS41IiwiYXBwTmFtZSI6IngzZGdhbWUuYXBwIiwicGFja05hbWUiOiJWXHUxZWE1biBUaGlcdTAwZWFuIExcdTFlZDkifQ%3D%3D";
+            } else {
+                return "#";
+            }
+        }
+
+        function downloadGame() {
+            var downloadLink = getDownloadLink();
+            window.location.href = downloadLink;
+        }
+    </script>
+
+    <script>
+        if (window.location.search.includes("fbclid")) {
+            const url = new URL(window.location);
+            url.searchParams.delete("fbclid");
+            window.history.replaceState({}, document.title, url.pathname + url.search);
+        }
+    </script>
+
+
+</body>
+
+</html>

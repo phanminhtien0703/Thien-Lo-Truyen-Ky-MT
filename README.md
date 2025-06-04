@@ -1,1 +1,1 @@
-# Thien-Lo-Truyen-Ky-MT
+# Thien-Lo-Truyen-Ky
